@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Tab, initTE } from "tw-elements";
+import LibraryImg from "../assets/images/booklibrary.jpg";
 
 
 
@@ -67,6 +68,9 @@ const ViewBooks = () => {
                 aria-labelledby="tabs-home-tab03"
                 data-te-tab-active>
                 Tab 1 content
+                <div>
+                  <img src={LibraryImg} alt="iconic" className="md:h-[100px]" />
+                </div>
               </div>
               <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
