@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Tab, initTE } from "tw-elements";
 import LibraryImg from "../assets/images/booklibrary.jpg";
@@ -6,7 +6,9 @@ import LibraryImg from "../assets/images/booklibrary.jpg";
 
 
 const ViewBooks = () => {
-  initTE({ Tab });
+  useEffect(() => {
+    initTE({ Tab });
+  }, []);
 
   return (
     <section className="text-[#000026] bg-slate-400">
