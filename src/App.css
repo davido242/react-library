@@ -10,7 +10,7 @@ body, * {
 }
 
 .forms {
-    @apply flex flex-col mx-auto pt-5 mb-12 pb-8 px-2 md:px-12 bg-white rounded w-full md:w-[90%] max-w-[600px] md:mt-12;
+    @apply flex flex-col mx-auto pt-5 mb-12 pb-8 px-2 md:px-12 bg-white rounded w-[90%] max-w-[600px] md:mt-12;
 }
 
 .inputs {

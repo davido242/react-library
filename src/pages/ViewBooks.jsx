@@ -12,7 +12,7 @@ const ViewBooks = () => {
 
   return (
     <section className="text-[#000026] bg-slate-400">
-      <div className="container mx-auto px-2 md:px-32">
+      <div className="container mx-auto px-2 md:px-32 pb-8">
         <div className="flex flex-col">
           <div className="flex justify-between border-b border-blue-300 py-4">
             <h3 className="text-lg font-bold">
@@ -69,8 +69,12 @@ const ViewBooks = () => {
                 role="tabpanel"
                 aria-labelledby="tabs-home-tab03"
                 data-te-tab-active>
-                Tab 1 content
-                <div>
+                <div className="book-pane flex flex-col md:flex-row gap-2">
+                  <div className="flex flex-col text-sm">
+                    <p><span className="font-bold">Title: </span>The Lions Den</p>
+                    <p><span className="font-bold">Aurthor: </span>Kings D.</p>
+                    <p><span className="font-bold">Date: </span>May, 2008</p>
+                  </div>
                   <img src={LibraryImg} alt="iconic" className="md:h-[100px]" />
                 </div>
               </div>
