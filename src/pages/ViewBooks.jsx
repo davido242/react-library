@@ -14,10 +14,17 @@ const ViewBooks = () => {
     <section className="text-[#000026] bg-slate-400">
       <div className="container mx-auto px-2 md:px-32 pb-8">
         <div className="flex flex-col">
-          <div className="flex justify-between border-b border-blue-300 py-4">
+          <div className="flex flex-col md:flex-row gap-2 justify-between border-b border-blue-300 py-4">
             <h3 className="text-lg font-bold">
               My Books
             </h3>
+            <div>
+              <label>Sort by: </label>
+              <select>
+                <option>ASS</option>
+                <option>DES</option>
+              </select>
+            </div>
             <input type="search" placeholder="Search books..." className="px-4 py-2 outline-0 rounded-sm"/>
           </div>
           <Link to="/login" className="text-neutral-500 py-4">Book Shelves (3)</Link>
@@ -69,7 +76,15 @@ const ViewBooks = () => {
                 role="tabpanel"
                 aria-labelledby="tabs-home-tab03"
                 data-te-tab-active>
-                <div className="book-pane flex flex-col md:flex-row gap-2">
+                <div className="book-pane flex flex-col md:flex-row gap-2 pb-8 md:pb-4">
+                  <div className="flex flex-col text-sm">
+                    <p><span className="font-bold">Title: </span>The Lions Den</p>
+                    <p><span className="font-bold">Aurthor: </span>Kings D.</p>
+                    <p><span className="font-bold">Date: </span>May, 2008</p>
+                  </div>
+                  <img src={LibraryImg} alt="iconic" className="md:h-[100px]" />
+                </div>
+                <div className="book-pane flex flex-col md:flex-row gap-2 pb-8 md:pb-4">
                   <div className="flex flex-col text-sm">
                     <p><span className="font-bold">Title: </span>The Lions Den</p>
                     <p><span className="font-bold">Aurthor: </span>Kings D.</p>
@@ -83,14 +98,44 @@ const ViewBooks = () => {
                 id="tabs-profile03"
                 role="tabpanel"
                 aria-labelledby="tabs-profile-tab03">
-                Tab 2 content
+                <div className="book-pane flex flex-col md:flex-row gap-2 pb-8 md:pb-4">
+                  <div className="flex flex-col text-sm">
+                    <p><span className="font-bold">Title: </span>The Lions Den</p>
+                    <p><span className="font-bold">Aurthor: </span>Kings D.</p>
+                    <p><span className="font-bold">Date: </span>May, 2008</p>
+                  </div>
+                  <img src={LibraryImg} alt="iconic" className="md:h-[100px]" />
+                </div>
               </div>
               <div
                 class="hidden opacity-0 transition-opacity duration-150 ease-linear data-[te-tab-active]:block"
                 id="tabs-messages03"
                 role="tabpanel"
                 aria-labelledby="tabs-profile-tab03">
-                Tab 3 content
+                <div className="book-pane flex flex-col md:flex-row gap-2 pb-8 md:pb-4">
+                  <div className="flex flex-col text-sm">
+                    <p><span className="font-bold">Title: </span>The Lions Den</p>
+                    <p><span className="font-bold">Aurthor: </span>Kings D.</p>
+                    <p><span className="font-bold">Date: </span>May, 2008</p>
+                  </div>
+                  <img src={LibraryImg} alt="iconic" className="md:h-[100px]" />
+                </div>
+                <div className="book-pane flex flex-col md:flex-row gap-2 pb-8 md:pb-4">
+                  <div className="flex flex-col text-sm">
+                    <p><span className="font-bold">Title: </span>The Lions Den</p>
+                    <p><span className="font-bold">Aurthor: </span>Kings D.</p>
+                    <p><span className="font-bold">Date: </span>May, 2008</p>
+                  </div>
+                  <img src={LibraryImg} alt="iconic" className="md:h-[100px]" />
+                </div>
+                <div className="book-pane flex flex-col md:flex-row gap-2 pb-8 md:pb-4">
+                  <div className="flex flex-col text-sm">
+                    <p><span className="font-bold">Title: </span>The Lions Den</p>
+                    <p><span className="font-bold">Aurthor: </span>Kings D.</p>
+                    <p><span className="font-bold">Date: </span>May, 2008</p>
+                  </div>
+                  <img src={LibraryImg} alt="iconic" className="md:h-[100px]" />
+                </div>
               </div>           
             </div>
           </div>

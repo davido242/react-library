@@ -18,7 +18,7 @@ const AddBook = ({ title, setTitle, todos, setTodos}) => {
     <section>
       <div className="container mx-auto">
         <div className="form-header">
-          <form className="forms" onSubmit={onFormSubmit}>
+          <form className="flex flex-col mx-auto pt-5 mb-12 pb-8 px-2 md:px-12 bg-white w-full md:w-[90%] max-w-[600px] md:mt-12" onSubmit={onFormSubmit}>
             <h3 className="form-header">Add a Book to your Library</h3>
             <input
               type="text"
