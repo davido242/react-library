@@ -10,7 +10,7 @@ body, * {
 }
 
 .forms {
-    @apply flex flex-col mx-auto pt-5 mb-12 pb-8 px-12 bg-white rounded w-[90%] max-w-[600px] md:mt-12;
+    @apply flex flex-col mx-auto pt-5 mb-12 pb-8 px-2 md:px-12 bg-white rounded w-full md:w-[90%] max-w-[600px] md:mt-12;
 }
 
 .inputs {
@@ -18,9 +18,9 @@ body, * {
 }
 
 .form-btn {
-    @apply bg-[#000026] rounded p-2 hover:bg-[#121259] text-white text-lg text-center my-4
+    @apply bg-[#000026] rounded p-2 hover:bg-[#121259] text-white text-lg text-center my-4;
 }
 
 .form-header {
-    @apply text-xl text-slate-600 font-bold mb-5
+    @apply text-xl text-slate-600 font-bold mb-5;
 }
