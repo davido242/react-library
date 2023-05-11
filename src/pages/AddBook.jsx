@@ -36,6 +36,7 @@ const AddBook = ({ title, setTitle, todos, setTodos}) => {
               id="author"
               className="inputs"
             />
+            {/* <label for="collection">Choose a Date:</label> */}
             <input
               type="date"
               placeholder="Select Date"

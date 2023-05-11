@@ -14,7 +14,7 @@ body, * {
 }
 
 .inputs {
-    @apply outline-0 rounded border border-slate-800 p-4 mb-4;
+    @apply outline-0 rounded border border-slate-800 p-4 mb-4 w-full;
 }
 
 .form-btn {
